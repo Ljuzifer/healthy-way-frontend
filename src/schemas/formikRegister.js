@@ -2,7 +2,7 @@ import * as Yup from 'yup';
 
 const EMAIL_RULE =
   /^(([^<>()[\]\\.,;:\s@"]+(.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@(([[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}])|(([a-zA-Z-0-9]+.)+[a-zA-Z]{2,}))$/;
-const PASSWORD_RULE = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
+// const PASSWORD_RULE = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{5,}$/;
 
 export const registerSchema = Yup.object().shape({
   name: Yup.string()
@@ -15,10 +15,12 @@ export const registerSchema = Yup.object().shape({
     .matches(EMAIL_RULE, 'Invalid email address'),
   password: Yup.string()
     .required('Required')
-    .min(6, 'Min length: 6 characters').max(16, 'Max length: 16 characters').matches(
-      PASSWORD_RULE,
-      `Use uppercase, lowercase letters, number. Letters only in English.`
-    ),
+    .min(6, 'Min length: 6 characters')
+    .max(16, 'Max length: 16 characters'),
+  // .matches(
+  //   PASSWORD_RULE,
+  //   `Use uppercase, lowercase letters, number. Letters only in English.`
+  // ),
 });
 
 export const goalSchema = Yup.object().shape({
