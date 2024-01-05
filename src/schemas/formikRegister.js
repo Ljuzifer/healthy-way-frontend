@@ -15,8 +15,7 @@ export const registerSchema = Yup.object().shape({
     .matches(EMAIL_RULE, 'Invalid email address'),
   password: Yup.string()
     .required('Required')
-    .min(7, 'Min length: 7 characters')
-    .matches(
+    .min(6, 'Min length: 6 characters').max(16, 'Max length: 16 characters').matches(
       PASSWORD_RULE,
       `Use uppercase, lowercase letters, number. Letters only in English.`
     ),
