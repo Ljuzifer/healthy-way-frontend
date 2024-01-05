@@ -1,4 +1,4 @@
-import{s as n,H as r,u as c,V as x,r as t,j as e,C as p,t as m,q as l,A as g}from"./index-79c528f6.js";import{g as h,a as f,b as u,c as w,d as b}from"./getRecommendedFood-086d6e50.js";const j="/healthy-way-frontend/assets/food-desk@1x-a984dc19.png",y="/healthy-way-frontend/assets/food-desk@2x-1318a229.png",k="/healthy-way-frontend/assets/food-tab@1x-20ca8956.png",F="/healthy-way-frontend/assets/food-tab@2x-f20df540.png",R="/healthy-way-frontend/assets/food-mob@1x-411148cb.png",v="/healthy-way-frontend/assets/food-mob@2x-5a8c6e43.png",I=n.section`
+import{s as n,H as r,u as c,V as x,r as t,j as e,C as p,t as m,q as l,A as g}from"./index-bab10536.js";import{g as h,a as f,b as u,c as w,d as b}from"./getRecommendedFood-848b4949.js";const j="/healthy-way-frontend/assets/food-desk@1x-a984dc19.png",y="/healthy-way-frontend/assets/food-desk@2x-1318a229.png",k="/healthy-way-frontend/assets/food-tab@1x-20ca8956.png",F="/healthy-way-frontend/assets/food-tab@2x-f20df540.png",R="/healthy-way-frontend/assets/food-mob@1x-411148cb.png",v="/healthy-way-frontend/assets/food-mob@2x-5a8c6e43.png",I=n.section`
   padding-top: 16px;
   padding-bottom: 40px;
 
