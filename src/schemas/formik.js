@@ -35,7 +35,7 @@ export const changePasswordSchema = Yup.object().shape({
   // ),
   newPassword: Yup.string()
     .required('Password is required')
-    .min(7, 'The password must be at least 7 characters long'),
+    .min(6, 'The password must be at least 6 characters long'),
   // .matches(
   //   PASSWORD_RULE,
   //   `Please create a stronger password. The password must be at least 7 characters, contain  1 uppercase letter, 1 lowercase letter, 1 number. The letters must be English.`
